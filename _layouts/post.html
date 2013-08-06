@@ -2,5 +2,6 @@
 layout: default
 ---
 
-<h2 class="content">{{page.title}}</h2>
-{{ content }}
+{% assign post = page %}
+
+{% include post.html %}
