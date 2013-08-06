@@ -1,3 +1,7 @@
 This is from the _include page
-<h2 class="content">{{page.title}}</h2>
-{{ content }}
+<h2 class="content">{{post.title}}</h2>
+{% if content %}
+    {{ content }}
+  {% else %}
+    {{ post.content }}
+{% endif %}
