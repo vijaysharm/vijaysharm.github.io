@@ -4,4 +4,11 @@ layout: default
 
 <section class="content">
 	<p>This is my personal blog page</p>
+	<ul class="entries">
+
+  	{% for post in site.posts %}
+   		<li><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a></li>
+   	{% endfor %}
+
+	</ul>
 </section>
