@@ -17,6 +17,10 @@ body {
 	padding: 15px 30px 15px 10px;
 }
 
+.post h1:nth-child(1){
+	border-left: 8px solid tomato;
+}
+
 .article_date {
 	margin-top: 65px;
 	text-transform: uppercase;
