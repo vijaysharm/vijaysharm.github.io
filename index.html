@@ -2,7 +2,7 @@
 layout: default
 ---
 <section id="posts">
-  <ol>
+  <ol class="list-unstyled">
     {% for post in paginator.posts %}
     	<li>{% include post.html %}</li>
     {% endfor %}
@@ -44,4 +44,5 @@ layout: default
     </ol>
   </nav>
   {% endif %}
+
 </section>
