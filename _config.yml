@@ -1,2 +1,6 @@
 paginate: 10
 exclude: [test.html]
+atom_path : /atom.xml
+rss_path : /rss.xml
+author: Vijay Sharma
+production_url : vijaysharm.github.io
