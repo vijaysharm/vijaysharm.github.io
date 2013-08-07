@@ -1,7 +1,7 @@
 <div class="container content">
-	<div class="row">
+	<div class="row post">
 		<div class="col-lg-3">
-			<h5 class="text-right article_date text-muted"><time pubdate datetime="{{ post.date | html_global_date }}">{{ post.date | date: date_format }}</time></h5>
+			<h5 class="text-right article_date text-muted"><time pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date: date_format }}</time></h5>
 		</div>
 		<div class="col-lg-9">
 			<h1 class="article_title">{{post.title}}</h1>
