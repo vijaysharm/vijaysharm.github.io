@@ -1,3 +1,2 @@
-excerpt_separator: "\n\n"
 paginate: 10
 exclude: [test.html]
