@@ -17,12 +17,15 @@
 	</section>
 
 	<section class="content">
-		{{content}}
+		<div class="row">
+			<div class="col-lg-10">
+				{{content}}
+			</div>
+			<div class="col-lg-2">
+				sidebar
+			</div>
+		</div>
 	</section>
-
-	<section id="paginator">
-		{% include paginator.html %}
-	</section>	
 
 	<section id="footer">
 		{% include footer.html %}
