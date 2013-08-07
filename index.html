@@ -10,8 +10,10 @@ layout: default
 				</h5>
 			</div>
 			<div class="col-lg-9">
-				<h1 class="article_title">{{post.title}}</h1>
-				{{ post.content }}
+				<h1 class="article_title">
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</h1>
+				{{ post.excerpt }}
 			</div>
 		</div>
 	{% endfor %}
