@@ -11,9 +11,14 @@
 </head>
 
 <body class="{{ page.layout }}">
-	<div class="content">
+
+	<section id="header">
+		{% include header.html %}
+	</section>
+
+	<section class="content">
 		{{content}}
-	</div>
+	</section>
 </body>
 
 </html>
