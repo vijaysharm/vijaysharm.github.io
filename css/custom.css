@@ -33,6 +33,14 @@ body {
 	margin-bottom: 20px;
 }
 
+.footer {
+	padding: 20px 0;
+}
+
+a {
+	color: tomato;
+}
+
 /** extra small devices (phones) */
 @media (min-width: 768px) {
 	.post_content p {
