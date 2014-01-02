@@ -2,6 +2,20 @@ body {
 	background: #FDFDFD;
 }
 
+a {
+	color: tomato;
+	text-decoration:none;
+	padding: 4px;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {
+	background: tomato;
+	color: #FDFDFD;
+	text-decoration:none;
+}
+a:active {text-decoration:none;}
+
 .header {
 	margin: 100px 0 35px 0;
 }
@@ -9,6 +23,11 @@ body {
 .header > *:hover {
 	color: tomato;
 	background: #FDFDFD;
+}
+
+.header a {
+	color: black;
+	text-decoration: none;
 }
 
 .banner {
@@ -40,25 +59,6 @@ body {
 
 .footer {
 	padding: 20px 0;
-}
-
-a {
-	color: tomato;
-	text-decoration:none;
-	padding: 4px;
-}
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:hover {
-	background: tomato;
-	color: #FDFDFD;
-	text-decoration:none;
-}
-a:active {text-decoration:none;}
-
-.header a {
-	color: black;
-	text-decoration: none;
 }
 
 .footer a {
