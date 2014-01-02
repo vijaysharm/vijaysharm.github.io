@@ -6,9 +6,14 @@ body {
 	margin: 100px 0 35px 0;
 }
 
+.header > *:hover {
+	color: tomato;
+	background: #FDFDFD;
+}
+
 .banner {
 	background: tomato; 
-	height: 200px
+	height: 100px;
 }
 
 .post h1, .post h2 {
@@ -39,7 +44,17 @@ body {
 
 a {
 	color: tomato;
+	text-decoration:none;
+	padding: 4px;
 }
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {
+	background: tomato;
+	color: #FDFDFD;
+	text-decoration:none;
+}
+a:active {text-decoration:none;}
 
 .header a {
 	color: black;
@@ -57,6 +72,10 @@ a {
 		font-size: 1.3em;
 		margin-bottom: 20px;
 	}
+
+	.banner {
+		height: 200px;
+	}
 }
 
 /** small devices (tablets) */
@@ -66,6 +85,15 @@ a {
 		font-size: 1.4em;
 		margin-bottom: 20px;
 	}
+
+	.banner {
+		height: 200px;
+	}
+
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}	
 }
 
 /** Medium Devices (desktops) */
@@ -79,6 +107,10 @@ a {
 	.article_date {
 		text-align: right;
 	}
+
+	.banner {
+		height: 200px;
+	}
 }
 
 /** Large devices (TVs, large desktops) */
@@ -91,5 +123,9 @@ a {
 
 	.article_date {
 		text-align: right;
-	}	
+	}
+
+	.banner {
+		height: 200px;
+	}
 }
