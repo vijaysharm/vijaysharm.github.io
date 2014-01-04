@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lessons learned from the Google I/O Android application – Part 1: Fragments
+title: Lessons learned from the Google I/O Android application – Part 1
 ---
 *The Google I/O Android application has a plethora of knowledge useful to any developer looking for solutions to common development problems. The source code for the for the project can be found [here](https://code.google.com/p/iosched/). This series of articles aims to disect some of the nuggets of information I've found useful for my development.*
 
@@ -16,7 +16,7 @@ One trick I learned from the Google I/O source code was, create an abstract sing
 
 ### Let's see some code
 
-So what does the xml look like? Here's my activity_singlepane_empty.xml
+So what does the xml look like? Here's my `activity_singlepane_empty.xml`
 ```
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_container"
@@ -24,7 +24,7 @@ So what does the xml look like? Here's my activity_singlepane_empty.xml
 	android:layout_height="match_parent" />
 ```
 
-That's it! Now I create an abstract class, which will load this xml resource and will use the transaction manager to commit the Fragment to this layout. Note that I like using generics in this situation so that I can have some type safety. Google's application doesn't really do this, but I say, ‘To each his own..'.
+That's it! Now I create an abstract class, which will load this xml resource and will use the transaction manager to commit the Fragment to this layout. Note that I like using generics in this situation so that I can have some type safety. Google's application doesn't really do this, but I say, *To each his own..*.
 
 ```language_java
 public abstract class SimpleSinglePaneActivity<T extends Fragment> extends FragmentActivity
@@ -62,4 +62,4 @@ public abstract class SimpleSinglePaneActivity<T extends Fragment> extends Fragm
 }
 ```
 
-The onCreate method will instantiate the fragment to display, and commit it the view using the fragment manager. If the view is ever recreated, the fragment is simply reloaded from the fragment manager. In the google application, this goes a bit further by converting the intent into arguments for the fragments, but I'll leave that out so I don't clutter the important information. The take away here is, now I can extend SimpleSinglePaneActivity, which will return the fragment type I'm trying to show. I found this to be a nifty little trick pretty useful since now I always think in Fragments, which helps scale my application if i need to extend it to support tablets. Hopefully you'll find this as useful as I did. Enjoy!
+The onCreate method will instantiate the fragment to display, and commit it the view using the fragment manager. If the view is ever recreated, the fragment is simply reloaded from the fragment manager. In the google application, this goes a bit further by converting the intent into arguments for the fragments, but I'll leave that out so I don't clutter the important information. The take away here is, now I can extend `SimpleSinglePaneActivity`, which will return the fragment type I'm trying to show. I found this to be a nifty little trick pretty useful since now I always think in Fragments, which helps scale my application if i need to extend it to support tablets. Hopefully you'll find this as useful as I did. Enjoy!
