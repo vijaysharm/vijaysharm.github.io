@@ -61,6 +61,10 @@ a:active {text-decoration:none;}
 	margin-bottom: 20px;
 }
 
+li {
+	font-size: 1.2em;
+}
+
 .footer {
 	padding: 20px 0;
 }
