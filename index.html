@@ -7,8 +7,10 @@ layout: default
 
 {% for post in paginator.posts %}
 <div class="post">
-	<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	<h3 class="date">{{ post.date | date_to_string }}</h3>
+	<div class="l-left-align l-fill-parent l-clearfix">
+		<h2 class="title l-90p"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<h4 class="date l-10p">{{ post.date | date_to_string }}</h4>
+	</div>
 	{{ post.excerpt }}
 	<a href="{{ post.url }}">Continue reading...</a>
 </div>
