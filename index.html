@@ -12,7 +12,7 @@ layout: default
 		<h4 class="date l-10p">{{ post.date | date_to_string }}</h4>
 	</div>
 	{{ post.excerpt }}
-	<a href="{{ post.url }}">Continue reading...</a>
+	<a class="continue-reading" href="{{ post.url }}">Continue reading...</a>
 </div>
 {% endfor %}
 
