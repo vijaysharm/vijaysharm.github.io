@@ -11,6 +11,10 @@
 	float: left;
 }
 
+.l-center-align {
+	text-align: center;
+}
+
 .l-clearfix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;

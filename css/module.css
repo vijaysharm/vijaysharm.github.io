@@ -22,3 +22,13 @@
 	padding-top: 32px;
 	padding-bottom: 8px;
 }
+
+.contact {
+	list-style: none;
+	padding: 0;
+}
+
+.contact li {
+	padding: 0 8px;
+	float: left;
+}
