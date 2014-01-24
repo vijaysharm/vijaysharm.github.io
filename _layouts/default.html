@@ -6,31 +6,27 @@
 
 	<meta name="viewport" contents="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" media="screen" href="/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" media="screen" href="/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" media="screen" href="/css/prism.css" />
-	<link rel="stylesheet" media="screen" href="/css/custom.css">
+	<link rel="stylesheet" media="screen" href="/css/base.css">
+	<link rel="stylesheet" media="screen" href="/css/layout.css">
+	<link rel="stylesheet" media="screen" href="/css/module.css">
+	<link rel="stylesheet" media="screen" href="/css/state.css">
+	<link rel="stylesheet" media="screen" href="/css/theme.css">
 </head>
 
-<body class="{{ page.layout }}">
+<body class="{{ page.layout }} l-container">
 
-	<section id="header">
+	<div class="l-fill-parent">
 		{% include header.html %}
-	</section>
 
-	<section class="content">
-		<div class="row">
-			<div class="col-lg-10">
-				{{content}}
-			</div>
-			<div class="col-lg-2">
-				<!-- insert some content here -->
-			</div>
+		<div class="l-left-align l-clearfix">
+			<div class="l-100p">{{content}}</div>
+			<div class="l-0p"><!-- sidebar --></div>
 		</div>
-	</section>
 
-	<section id="footer">
 		{% include footer.html %}
-	</section>
+	</div>
 
 	<script async src="//codepen.io/assets/embed/ei.js"></script>
 	<script src="/javascript/prism.js"></script>
@@ -42,7 +38,6 @@
 
 	  ga('create', 'UA-43004444-1', 'vijaysharm.github.io');
 	  ga('send', 'pageview');
-
 	</script>
 </body>
 

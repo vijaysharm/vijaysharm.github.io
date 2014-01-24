@@ -1,25 +1,18 @@
 ---
 layout: default
 ---
-<section id="posts" class="post_content">
-	{% for post in paginator.posts %}
-		<div class="row post">
-			<div class="col-lg-2">
-				<h5 class="article_date text-muted">
-					{{ post.date | date_to_string }}
-				</h5>
-			</div>
-			<div class="col-lg-9">
-				<h2 class="article_title">
-					{{ post.title }}
-				</h2>
-				{{ post.excerpt }}
+<div class="banner">
+	<h2>some witty subtitle</h2>
+</div>
 
-				<a href="{{ post.url }}">Continue reading...</a>
-			</div>
-		</div>
-	{% endfor %}
-</section>
+{% for post in paginator.posts %}
+<div class="post">
+	<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<h3 class="date">{{ post.date | date_to_string }}</h3>
+	{{ post.excerpt }}
+	<a href="{{ post.url }}">Continue reading...</a>
+</div>
+{% endfor %}
 
 <section id="paginator">
 	{% if paginator.total_pages > 1 %}

@@ -1,15 +1,13 @@
-<section class="post_content">
-	<div class="row post">
-		<div class="col-lg-2">
-			<h5 class="article_date text-muted">
-				{{ page.date | date_to_string }}
-			</h5>
-		</div>
-		<div class="col-lg-9">
-			<h2 class="article_title">{{ page.title }}</h2>
-			{{ content }}
-			<hr class="alt">
-			{% include disqus.html %}
-		</div>
+<div class="banner">
+	<h2 class="title">{{ page.title }}</h2>
+</div>
+<div class="post">
+	<div class="">
+		<h3 class="date">{{ page.date | date_to_string }}</h3>
 	</div>
-</section>
+	<div class="article">
+		{{ content }}
+		<hr class="alt">
+		{% include disqus.html %}
+	</div>
+</div>
