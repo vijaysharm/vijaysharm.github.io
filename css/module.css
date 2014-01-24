@@ -1,6 +1,7 @@
 .header {
 	font-family: Arial,sans-serif;
-	padding: 30px 0;
+	padding: 0;
+	padding-top: 30px;
 	text-align: center;
 }
 
@@ -23,16 +24,20 @@
 	padding-bottom: 8px;
 }
 
+.footer {
+	padding-bottom: 30px;
+}
+
 .contact {
-	list-style: none;
+	text-align: center;
 	padding: 0;
 }
 
 .contact li {
-	padding: 0 8px;
-	float: left;
+	display: inline-block;
+	padding: 0px 8px;
 }
 
-.footer {
-	padding-bottom: 30px;
+.contact li a {
+	padding: 2px 4px;
 }
