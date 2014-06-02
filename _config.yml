@@ -5,3 +5,4 @@ rss_path : /rss.xml
 author: Vijay Sharma
 production_url : vijaysharm.github.io
 disqus.short_name: vijaysharma
+markdown: kramdown
