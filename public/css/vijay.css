@@ -1,0 +1,55 @@
+a {
+	transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+.sidebar-about .lead {
+	font-size: 1.1rem;
+}
+
+.thingy:before {
+	content: " • ";
+	font-weight: bold;
+}
+
+.sidebar-nav-item {
+	display: inline;
+}
+
+/*orange #FF5722*/
+.sidebar a:hover {
+  color: tomato;
+  text-decoration: none;
+}
+
+.theme-base-vj .sidebar {
+  background-color: #202020;
+}
+
+.theme-base-vj .post h1 a {
+  text-decoration: none;	
+}
+
+.theme-base-vj .post h1 a:hover {
+  color: tomato;	
+}
+
+.theme-base-vj p a, .read {
+  color: #202020;
+  border-bottom: 1px dotted tomato;
+  text-decoration: none;  
+}
+
+.theme-base-vj p a:hover, .read:hover {
+  color: white;
+  background-color: tomato;
+  border-bottom: 0;
+}
