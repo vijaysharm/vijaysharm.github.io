@@ -26,7 +26,7 @@ So what does the xml look like? Here's my `activity_singlepane_empty.xml`
 
 That's it! Now I create an abstract class, which will load this xml resource and will use the transaction manager to commit the Fragment to this layout. Note that I like using generics in this situation so that I can have some type safety. Google's application doesn't really do this, but I say, *To each his own..*.
 
-```language_java
+```
 public abstract class SimpleSinglePaneActivity<T extends Fragment> extends FragmentActivity
 {
 	private static final String FRAGMENT_TAG = "single_pane_fragment";

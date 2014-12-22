@@ -1,56 +1,37 @@
 ---
 layout: default
+title: Home
 ---
-<div class="banner">
-	<h2>Life as a coder shouldn't be so rough...</h2>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.excerpt }}
+  </div>
+  {% endfor %}
 </div>
 
-{% for post in paginator.posts %}
-<div class="post">
-	<div class="l-left-align l-fill-parent l-clearfix">
-		<h2 class="title l-90p"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<h4 class="date l-10p">{{ post.date | date_to_string }}</h4>
-	</div>
-	{{ post.excerpt }}
-	<a class="continue-reading" href="{{ post.url }}">Continue reading...</a>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
 </div>
-{% endfor %}
-
-<section id="paginator">
-	{% if paginator.total_pages > 1 %}
-		<nav id="pagination">
-			<ol>
-			  {% if paginator.previous_page > 1 %}
-			    {% capture page_url %}page{{ page }}{% endcapture %}
-			  {% endif %}
-			  {% if paginator.previous_page %}
-			  <li>
-			    <a href="/{{ page_url }}" title="Go to previous page">
-			      &laquo;
-			    </a>
-			  </li>
-			  {% endif %}
-			  <li>
-			  {% for page in (1..paginator.total_pages) %}
-			  <li>
-			    {% if page > 1 %}
-			      {% capture page_url %}page{{ page }}{% endcapture%}
-			    {% endif %}
-			    {% if page == paginator.page %}
-			      {{ page }}
-			    {% else %}
-			      <a href="/{{ page_url }}">{{ page }}</a>
-			    {% endif %}
-			  </li>
-			  {% endfor %}
-			  {% if paginator.next_page %}
-			  <li>
-			    <a href="/page{{ paginator.next_page }}" title="Go to next page">
-			      &raquo;
-			    </a>
-			  </li>
-			  {% endif %}
-			</ol>
-		</nav>
-	  {% endif %}
-</section>	

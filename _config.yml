@@ -1,8 +1,27 @@
-paginate: 10
-exclude: [test.html]
-atom_path : /atom.xml
-rss_path : /rss.xml
-author: Vijay Sharma
-production_url : vijaysharm.github.io
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Vijay Sharma
+tagline:          'A Mobile Developer'
+description:      'First solve the problem. Then write the code.'
+url:              http://vijaysharm.github.io/
+baseurl:          /
+
+author:
+  name:           'Vijay Sharma'
+  url:            https://twitter.com/v_sharm
+
+paginate:         5
+
+# Custom vars
+
+github:
+  repo:           https://github.com/vijaysharm
+
 disqus.short_name: vijaysharma
-markdown: kramdown
