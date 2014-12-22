@@ -1,3 +1,9 @@
+@media (min-width: 58em) {
+  html {
+    font-size: 17px;
+  }
+}
+
 a {
 	transition: all 0.25s;
     -webkit-transition: all 0.25s;
@@ -24,12 +30,12 @@ a {
 	display: inline;
 }
 
-/*orange #FF5722*/
 .sidebar a:hover {
   color: tomato;
   text-decoration: none;
 }
 
+/* THEME */
 .theme-base-vj .sidebar {
   background-color: #202020;
 }
