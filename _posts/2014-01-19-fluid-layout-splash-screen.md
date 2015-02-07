@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fluid layout splash screens
+published: false
 ---
 I need a splash screen. I have no idea how to make one. All I know are my requirements:
 + It needs to display a single line of styled text which may wrap to another line

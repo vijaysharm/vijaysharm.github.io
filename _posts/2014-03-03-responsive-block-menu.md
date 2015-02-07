@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Animanted responsive grid menu
+published: false
 ---
 I was working on a list type view for a mobile web application. I not only wanted to display a list of items in a grid, but I wanted the items to animate into view in some fancy way. What I settled on was a staggered slide-fade into screen. That means, that each item in the list will load one after the other from either the bottom or the right from their expected end position. The only other requirement I was looking for was that the items should be responsive to the size of the page. They should resize according to the page width, and it should be rather easy to change the number of columns dislayed in the grid. So I start off with a list of item and some base styling.
 
