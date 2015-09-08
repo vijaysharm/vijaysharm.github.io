@@ -85,3 +85,6 @@ This approach ended up working really well for me. It reminds me of how android 
 As I mentioned, I had the privilege of my data not changing from underneath me while the user is scrolling. If it did, it would yield unpredictible result. What I might consider doing if my data were constantly changing would be to store the fact that the data has changed, but not modify the backing store's data. Instead, let the user know that the data has been updated, and allow them to request a refresh (pull to refresh, some button indicator like twitter or android, etc...), merge the new data into the backing store, and then proceed as normal. This might require you staging any new incoming data, and the handling of that alone may not be worth the investmenting in this technique, but it's an option for you to consider.
 
 Again, this approach is highly tailored to my read-only list. This technique would fail pretty misearbly if my list need to support deletion or inline additions, however, take this approach into consideration the next time you're faced with loading a number of items; Only load what you need when you need it!
+
+To anyone asking about sample code, have a look at this [gist](https://gist.github.com/vijaysharm/17045deae91e3174190e)
+
