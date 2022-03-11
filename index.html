@@ -1,40 +1,293 @@
 ---
 layout: default
-title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<section
+	class="hero is-large has-background-black has-text-white"
+	style="background: black url(assets/img/hero-front-page.jpg) center / cover;"
+>
+	<nav class="navbar is-transparent is-shadowless" role="navigation">
+		<div class="container">
+			<div class="navbar-menu centered">
+				<div class="navbar-brand">
+					<a class="navbar-item has-text-white" href="https://vijaysharma.ca">vijaysharma.ca</a>
+					</div>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+				<div class="navbar-menu">
+					<div class="navbar-end">
+						<a href="/" class="navbar-item has-text-primary">Home</a>
+						<a href="/blog.html" class="navbar-item has-text-white">Blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="hero-body">
+		<div class="container">
+			<p class="subtitle is-3 has-text-white">Looking for a Developer with <span class="has-text-primary">Experience</span>? Have an idea?</p>
+			<p class="title is-1 has-text-white">Let's make it happen together</p>
+		</div>
+	</div>
+</section>
 
-    {{ post.excerpt }}
-    <div>
-      <a href="{{ post.url }}" class="read">Continue reading...</a>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+<section class="hero is-medium has-background-black">
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column is-5 is-offset-1 landing-caption">
+					<h1 class="title is-1 is-bold is-spaced has-text-white">Hi! I'm <span class="has-text-primary">Vijay</span></h1>
+					<p class="subtitle is-muted is-4">And I love developing software. I've been doing it for over 20 years.</p>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+					<p class="subtitle is-muted is-4"> I'm an expert <span class="has-text-primary">mobile</span> developer, including <span class="has-text-primary">machine-learning</span> at the edge. I'm also a pretty advanced <span class="has-text-primary">full-stack</span> developer. If you have an idea, I can make it happen.</p>
+
+					<p class="subtitle is-muted is-4">Wanna chat? Let's get in touch.</p>
+					<p>
+						<a class="button is-rounded is-primary" href="https://www.linkedin.com/in/vijaysharm/" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+
+						<a class="button is-rounded is-primary" href="https://twitter.com/v_sharm" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+
+						<a class="button is-rounded is-primary" href="https://github.com/vijaysharm" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+
+						<a class="button is-rounded is-primary" href="#contact">
+							<i class="fab fas fa-envelope"></i>
+						</a>
+					</p>
+				</div>
+				<div class="column is-5 is-offset-1">
+					<figure class="image is-4by4">
+						<img class="lazy" src="assets/img/profile_pic.jpg" alt="Profile picture" style="display: block;">
+					</figure>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section
+	class="hero is-medium has-background-black has-text-white"
+	style="background-image: url(assets/img/bgd-pattern.jpg); background-repeat: repeat; background-position: center center;"
+>
+	<div class="hero-body">
+		<div class="container">
+			<p class="title is-1 has-text-white">Subscribe</p>
+			<p class="subtitle is-3 has-text-grey">Our monthly newsletter where we share the latest on the company, case studies, and articles on mobile and machine learning at the edge</p>
+
+			<div class="columns">
+				<div class="column is-half">
+					<form action="https://vijaysharma.us20.list-manage.com/subscribe/post?u=6ffa6ce428ae3fc9e1eb4f897&amp;id=779f2b488b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="field is-grouped">
+							<p class="control has-icons-left has-icons-right is-expanded">
+								<input type="email" value="" name="EMAIL" class="input email subscribe-input is-medium" id="mce-EMAIL" placeholder="Enter Email Address" required>
+								<span class="icon is-small is-left subscribe-icon"><i class="fas fa-envelope"></i></span>
+								<span class="icon is-small is-right subscribe-icon"><i class="fas fa-check"></i></span>
+							</p>
+							<p class="control">
+								<!-- <button class="button">Login</button> -->
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button is-medium is-primary">
+							</p>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" name="b_6ffa6ce428ae3fc9e1eb4f897_779f2b488b" tabindex="-1" value="">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="hero is-medium has-background-black">
+	<div class="hero-header" style="padding-top: 120px;">
+		<div class="container">
+			<div class="has-text-centered single-spaced" style="top: 92px;">
+				<h1 class="title is-1 has-text-white">What I can do for you</h1>
+			</div>
+		</div>
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p style="text-align: center; font-size: 60px;"><span class="fas fa-pencil-ruler"></span></p>
+						<h1 class="title is-size-4 has-text-centered">Design</h1>
+						<p class="is-size-5 has-text-centered">
+							I can help get your ideas on to paper. I can help design your websites, so they look great, load fast, and help you convert your online visitors into customers.
+						</p>
+					</div>
+				</div>
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p style="text-align: center; font-size: 60px;"><span class="fas fa-file-code"></span></p>
+						<h1 class="title is-size-4 has-text-centered">Develop</h1>
+						<p class="is-size-5 has-text-centered">
+							I can take your idea for the next great app from the whiteboard to the app store. I build apps for both Apple and Android devices. I can guide you through the process of analysis, design, market testing, and launching your app.
+						</p>
+					</div>
+				</div>
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p style="text-align: center; font-size: 60px;"><span class="fas fa-hands-helping"></span></p>
+						<h1 class="title is-size-4 has-text-centered">Train</h1>
+						<p class="is-size-5 has-text-centered">
+							I can help provide training for your team whether its about handing-off a project, how to develop apps for Apple or Android devices, or if its machine-learning. I can help transfer all the necessary knowledge your team needs to succeed.
+						</p>
+					</div>
+				</div>
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p style="text-align: center; font-size: 60px;"><span class="fas fa-life-ring"></span></p>
+						<h1 class="title is-size-4 has-text-centered">Support</h1>
+						<p class="is-size-5 has-text-centered">
+							I want my clients to know I'm there for them. When we work together, know that I will continue providing support for as long as you need it. I take pride in the work I do, and I believe your clients deserve to have the best experience possible. I'm there to make it happen.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section
+	class="hero is-medium has-background-black"
+	style="background: black url(assets/img/people-hero.jpg) center / cover;"
+>
+	<div class="hero-header" style="padding-top: 120px;">
+		<div class="container">
+			<div class="has-text-centered single-spaced" style="top: 92px;">
+				<h1 class="title is-1 has-text-white">Here are some People I've worked with</h1>
+			</div>
+		</div>
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p class="is-size-5">
+							Excellent! Thank you for your continued cooperation and high quality of work. Much appreciated!
+						</p>
+						<article class="media" style="padding-top: 20px;">
+							<figure class="media-left">
+								<p class="image is-64x64">
+								<img class="is-rounded" src="assets/img/gm.jpeg">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>Gil Megidish</strong>
+										<br><small>TestFairy, Co-Founder &amp; CTO</small>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p class="is-size-5">
+							I love working with Vijay! Professional, punctual and effective. This is your guy!
+						</p>
+						<article class="media" style="padding-top: 20px;">
+							<figure class="media-left">
+								<p class="image is-64x64">
+								<img class="is-rounded" src="assets/img/gb.jpeg">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>Gian Brazzini</strong>
+										<br><small>pulseM, Director Of Engineering</small>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="column is-flex">
+					<div class="notification">
+						<p class="is-size-5">
+							Vijay is a professional, asks great questions, and gets the job done accurately. Amazing!
+						</p>
+						<article class="media" style="padding-top: 20px;">
+							<figure class="media-left">
+								<p class="image is-64x64">
+								<img class="is-rounded" src="assets/img/mf.jpeg">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>Matthew Feadler</strong>
+										<br><small>IQZone, CTO</small>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="hero has-background-black">
+	<div class="hero-header" style="padding-top: 120px;">
+		<div class="has-text-centered single-spaced" style="top: 92px;">
+			<h1 class="title is-1 has-text-white">Work with someone who's passionate about software</h1>
+		</div>
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+				<!-- Recent blog posts -->
+                {% for post in site.posts limit:3 %}
+                <div class="column is-one-third is-flex">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="{% if post.cover %}{{ post.cover }}{% else %}assets/img/fallback-cover.jpg{% endif %}">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">{{ post.title }}</p>
+									<p class="subtitle is-6"><time datetime="2016-1-1">{{ post.date | date_to_string }}</time></p>
+								</div>
+								</div>
+							<div class="content">
+								{{ post.excerpt }}
+								<br>
+								<br>
+								<a href="{{ post.url }}" class="button is-primary">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="hero-footer" style="padding-bottom: 120px;">
+		<div class="has-text-centered single-spaced">
+			<a href="/blog.html" class="button is-success is-rounded"><strong>Check Blog Posts</strong></a>
+		</div>
+	</div>
+</section>

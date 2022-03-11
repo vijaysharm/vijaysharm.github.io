@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="957px" height="199px" viewBox="0 0 957 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <filter x="-1.3%" y="-6.6%" width="102.6%" height="113.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <text id="text-2" font-family="Futura-CondensedExtraBold, Futura" font-size="70" font-style="condensed" font-weight="700" fill="#FFFFFF">
+            <tspan x="293.320801" y="89">SUPERHERO</tspan>
+        </text>
+        <filter x="-0.9%" y="-5.6%" width="101.7%" height="115.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Screenshot-6.5-1" transform="translate(-866.000000, -522.000000)">
+            <g id="Group" filter="url(#filter-1)" transform="translate(875.000000, 531.000000)">
+                <rect id="Rectangle" fill="#F2141E" x="0" y="0" width="939" height="126"></rect>
+                <rect id="Rectangle-Copy" fill="#FFFFFF" x="0" y="128" width="939" height="53"></rect>
+                <g id="SUPERHERO" fill="#FFFFFF" fill-opacity="1">
+                    <use filter="url(#filter-3)" xlink:href="#text-2"></use>
+                    <use xlink:href="#text-2"></use>
+                </g>
+                <text id="Colouring-Book" font-family="Futura-CondensedExtraBold, Futura" font-size="25" font-style="condensed" font-weight="700" fill="#000000">
+                    <tspan x="384.404785" y="164">Colouring Book</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,134 @@
+<section
+    class="hero is-medium subscribe-bg has-text-white"
+    style="background-image: url(/assets/img/bgd-pattern.jpg); background-repeat: repeat; background-position: center center;"
+>
+    <a name="contact"></a>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-5 is-offset-1 landing-caption">
+                    <h1 class="title is-1 is-bold is-spaced has-text-white">Wanna Chat?</h1>
+                    <p class="subtitle is-muted has-text-white is-4">
+                        Have a project you're interested in discussing with us? Drop us a line below, we’d love to talk.
+                    </p>
+
+                    <p>
+                        <a class="button is-rounded is-primary" href="https://www.linkedin.com/in/vijaysharm/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a class="button is-rounded is-primary" href="https://twitter.com/v_sharm" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="button is-rounded is-primary" href="https://github.com/vijaysharm" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="column is-5 is-offset-1">
+                <form id="my-form" action="https://formspree.io/mlepavwz" method="POST">
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Name">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input is-success" type="email" placeholder="Email" name="email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea name="message" type="text" class="textarea" placeholder="Explain how we can help you"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <button id="my-form-button" class="button is-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="my-form-status"></p>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer has-background-black has-text-white">
+    <div class="content has-text-centered">
+        <p>Copyright © {{ 'now' | date: "%Y" }} vijaysharma.ca | Powered by vijaysharma.ca</p>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+
+        // get the form elements defined in your form HTML above
+
+        var form = document.getElementById("my-form");
+        var button = document.getElementById("my-form-button");
+        var status = document.getElementById("my-form-status");
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+            form.reset();
+            button.style = "display: none ";
+            status.innerHTML = "Thanks!";
+        }
+
+        function error() {
+            status.innerHTML = "Oops! There was a problem.";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>

@@ -1,27 +1,103 @@
----
-layout: default
----
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        {% include header.html %}
+    </head>
+    <style>
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+        label,li,p,td {
+            line-height: 1.8rem;
+            font-size: 1.1rem;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .wp-block-image img {
+            border: 1px solid #000;
+            margin: 20px;
+            max-width: 95%;
+        }
+        
+        code {
+            background-color: inherit;
+            color: #00d1b2;
+            font-size: 1.2rem;
+            font-weight: normal;
+            padding: 0.25em 0.2em 0.25em;
+        }
+        
+        strong {
+            color: white;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 2.5rem;
+        }
+        
+        a {
+            color: #00d1b2;
+        }
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+        .content-width {
+            max-width: 75%
+        }
+        
+        </style>
+  <body>
+    <nav class="navbar has-background-black is-shadowless" role="navigation">
+        <div class="container">
+            <div class="navbar-menu centered">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-white" href="https://vijaysharma.ca">vijaysharma.ca</a>
+                </div>
+    
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="/" class="navbar-item has-text-white">Home</a>
+                        <a href="/blog.html" class="navbar-item has-text-primary">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-{% include disqus.html %}
+    <section class="hero has-background-black">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1 has-text-white">{{ page.title }}</h1>
+                <p class="subtitle is-6" style="padding-top: 16px;">
+                    <span>Vijay Sharma</span> / 
+                    <time datetime="2016-1-1">{{ page.date | date_to_string }}</time>
+                </p>
+    
+                {% if page.cover %}
+                {% assign cover_image = page.cover %}
+                {% else %}
+                {% assign cover_image = '/assets/img/fallback-cover.jpg' %}
+                {% endif %}
+                <!-- <figure class="image is-fullwidth" style="max-width: 100%">
+                    <img src="{{ cover_image }}">
+                </figure> -->
+                <div style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url({{ cover_image }}) center / cover; height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="has-background-black">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-text-white content-width">
+                    {{ content }}
+                </div>
+                {% include ad_bar.html %}
+            </div>
+        </div>
+    </section>
+
+      {% include footer.html %}
+  </body>
+</html>

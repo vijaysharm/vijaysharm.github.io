@@ -1,0 +1,124 @@
+---
+layout: default
+---
+<section
+	class="hero is-large has-background-black has-text-white"
+	style="background: black url(assets/img/hero-blog-page.jpg) center / cover;"
+>
+	<nav class="navbar is-transparent is-shadowless" role="navigation">
+		<div class="container">
+			<div class="navbar-menu centered">
+				<div class="navbar-brand">
+					<a class="navbar-item has-text-white" href="https://vijaysharma.ca">vijaysharma.ca</a>
+					</div>
+
+				<div class="navbar-menu">
+					<div class="navbar-end">
+						<a href="/" class="navbar-item has-text-white">Home</a>
+						<a href="/blog.html" class="navbar-item has-text-primary">Blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="hero-body">
+		<div class="container">
+			<p class="title is-1 has-text-white">Welcome to my personal blog</p>
+			<p class="subtitle is-4 has-text-white">Sign up for my monthly newsletter</p>
+			<div class="columns">
+				<div class="column is-half">
+					<form action="https://vijaysharma.us20.list-manage.com/subscribe/post?u=6ffa6ce428ae3fc9e1eb4f897&amp;id=779f2b488b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="field is-grouped">
+							<p class="control has-icons-left has-icons-right is-expanded">
+								<input type="email" value="" name="EMAIL" class="input email subscribe-input is-medium" id="mce-EMAIL" placeholder="Enter Email Address" required>
+								<span class="icon is-small is-left subscribe-icon"><i class="fas fa-envelope"></i></span>
+								<span class="icon is-small is-right subscribe-icon"><i class="fas fa-check"></i></span>
+							</p>
+							<p class="control">
+								<!-- <button class="button">Login</button> -->
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button is-medium">
+							</p>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" name="b_6ffa6ce428ae3fc9e1eb4f897_779f2b488b" tabindex="-1" value="">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section
+	class="has-background-black"
+	style="background-image: url(assets/img/bgd-pattern.jpg); background-repeat: repeat; background-position: center center;"
+>
+	<div class="container">
+		<div class="columns">
+			<!-- posts -->
+			<div class="column" style="padding-top: 50px;">
+                {% for post in site.posts limit:1 %}
+                <!-- Featured -->
+				<div class="card">
+                    {% if post.cover %}
+                    {% assign cover_image = post.cover %}
+                    {% else %}
+                    {% assign cover_image = '/assets/img/fallback-cover.jpg' %}
+                    {% endif %}
+					<div
+						class="card-content"
+						style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url({{ cover_image }}) center / cover; padding: 100px;"
+					>
+						<div class="media">
+							<div class="media-content">
+								<p class="title is-4 has-text-white">{{ post.title }}</p>
+								<p class="subtitle is-6 has-text-white"><time datetime="2016-1-1">{{ post.date | date_to_string }}</time></p>
+							</div>
+							</div>
+						<div class="content has-text-white">
+							{{ post.excerpt }}
+							<br>
+							<br>
+							<a href="{{ post.url }}" class="button is-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+
+				<!-- cards -->
+				<div class="columns is-multiline" style="padding-top: 50px; padding-bottom: 50px;">
+					<!-- cards -->
+
+					<!-- TODO: Paging -->
+                    {% for post in site.posts %}
+					<div class="column is-one-third is-flex">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-16by9">
+									<img src="{% if post.cover %}{{ post.cover }}{% else %}assets/img/fallback-cover.jpg{% endif %}" alt="Placeholder image">
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="media">
+									<div class="media-content">
+										<p class="title is-4">{{ post.title }}</p>
+										<p class="subtitle is-6"><time datetime="2016-1-1">{{ post.date | date_to_string }}</time></p>
+									</div>
+									</div>
+								<div class="content">
+									{{ post.excerpt }}
+									<br>
+									<br>
+									<a href="{{ post.url }}" class="button is-primary">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+                    {% endfor %}
+				</div>
+			</div>
+			<!-- side bar -->
+			{% include ad_bar.html %}
+		</div>
+	</div>
+</section>

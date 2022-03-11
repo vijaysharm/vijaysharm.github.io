@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2208px" height="260px" viewBox="0 0 2208 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>banner</title>
+    <g id="banner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(455.000000, 55.000000)" fill="#FFFFFF">
+            <g id="Group" opacity="0.796154204" transform="translate(370.000000, 0.000000)" fill-rule="nonzero">
+                <polygon id="Path" points="103 105.038502 103 134 0 89.3757217 0 64.6139398 103 20 103 49.1636723 31.2326363 76.7995486"></polygon>
+                <path d="M165.828386,20.6203061 L136.854193,137.751901 C135.890322,141.606377 135.049548,144.658027 134.324903,146.895448 C133.600258,149.131728 132.502838,150.881068 131.018709,152.119517 C129.535742,153.376214 127.380387,154 124.548,154 C117.522193,154 114,151.012211 114,145.065142 C114,143.505106 114.688645,139.610717 116.067097,133.381975 L144.929806,16.2503795 C146.448773,10.0227779 147.896902,5.75434491 149.275354,3.45534385 C150.653806,1.15292166 153.33987,0 157.346321,0 C160.793031,0 163.432644,0.814229542 165.254708,2.44040787 C167.082579,4.0665862 168,6.30286649 168,9.14468725 C168.00116,11.2441222 167.270708,15.0689484 165.828386,20.6203061 Z" id="Path"></path>
+                <polygon id="Path" points="283 90.0927922 180 135 180 105.985584 251.981955 77.6950333 180 49.8061175 180 21 283 65.4883101"></polygon>
+            </g>
+            <text id="Code" font-family="LucidaGrande, Lucida Grande" font-size="128" font-weight="normal">
+                <tspan x="0" y="124">Code</tspan>
+            </text>
+            <text id="Complete" font-family="LucidaGrande, Lucida Grande" font-size="128" font-weight="normal">
+                <tspan x="703" y="126">Complete</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
