@@ -6,7 +6,7 @@ Login screens are found in a lot apps these days. I feel like the login screens 
 
 I finally got around to installing [Facebook's Paper app](https://www.facebook.com/paper) on my iPhone, and it was one of the first apps that I thought had a nice, clean login screen.
 
-![Image of Paper Login](/public/images/paper_login.gif)
+![Image of Paper Login](/assets/img/paper-login/paper_login.gif)
 
 It's not much, but it does a few things that I think are rather nice
 

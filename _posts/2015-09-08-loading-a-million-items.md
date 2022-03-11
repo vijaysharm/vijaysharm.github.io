@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Loading a million items
-published: true
 ---
 
-Loading a lot of items into memory can be difficult to manage. For the most part, if your view models are very slim, developers are more than willing to hold potentially a thousand objects in memory without thinking twice. It's a perfectly valid approach that many apps take. If you need more than a few thousand objects, maybe you'll figure out how to implement paging, and that'll be that. 
+Loading a lot of items into memory can be difficult to manage. For the most part, if your view models are very slim, developers are more than willing to hold potentially a thousand objects in memory without thinking twice. 
+
+It's a perfectly valid approach that many apps take. If you need more than a few thousand objects, maybe you'll figure out how to implement paging, and that'll be that. 
 
 What I'm about to describe next is the approach I took to displaying up to a million objects without paging. You might be asking why wouldn't I just implement paging, or going with some other approach, sadly, I can't really go into the _why_ of my requirement, so I'll just focus on the _how_. Note that my solution is very much tailored to the data I'm working with, so this technique may not work for you.
 
