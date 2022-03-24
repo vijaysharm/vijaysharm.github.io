@@ -27,3 +27,4 @@ jekyll 4.2.2
 - Fix paging on blog.html page
 - search?
 - tags?
+- Move over some of the TOS/Privacy pages from vijaysharma.ca
