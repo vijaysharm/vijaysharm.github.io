@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="stylesheet" href="devices.min.css">
+        <link rel="stylesheet" href="main.css">
+        <title>CodeComplete</title>
+    </head>
+    <body>
+        <div class="imageWrapper">
+            <div class="headerBackground">
+                <div class="container">
+                    <div class="iphonePreview">
+                        <div class="device device-iphone-x">
+                            <div class="device-frame">
+                                <!-- <iframe 
+                                    src="http://localhost:3000/embed/2e4e73aa25de73d85f74583e362e01987da2848942957645d1eb9cbf622d9195?dc=us-west-1&width=375&height=812"
+                                    width="375"
+                                    height="812"
+                                    title="My Demo App"
+                                    style="border:none; border-radius: 40px;">
+                                </iframe> -->
+                                <img src="" alt="" width="375" height="812" style="background-color: #CCC; border-radius: 40px;">
+                            </div>
+                            <div class="device-stripe"></div>
+                            <div class="device-header"></div>
+                            <div class="device-sensors"></div>
+                            <div class="device-btns"></div>
+                            <div class="device-power"></div>
+                        </div>
+                    </div>
+                    <div class="appInfo">
+                        <div class="appIconShadow">
+                            <svg width="0" height="0">
+                                <defs>
+                                    <clipPath id="shape120">
+                                        <path id="shape" class="cls-1" d="M6821,495.533v-4.281c0-1.2-.04-2.4-0.04-3.642a57.7,57.7,0,0,0-.68-7.882,26.144,26.144,0,0,0-2.48-7.483,25.115,25.115,0,0,0-11.04-11.044,26.118,26.118,0,0,0-7.49-2.481,47.28,47.28,0,0,0-7.88-.68c-1.2-.04-2.4-0.04-3.64-0.04h-53.5c-1.2,0-2.4.04-3.64,0.04a57.813,57.813,0,0,0-7.88.68,26.323,26.323,0,0,0-7.49,2.481,25.115,25.115,0,0,0-11.04,11.044,26.144,26.144,0,0,0-2.48,7.483,47.313,47.313,0,0,0-.68,7.882c-0.04,1.2-.04,2.4-0.04,3.642v53.5c0,1.2.04,2.4,0.04,3.641a57.7,57.7,0,0,0,.68,7.883,26.137,26.137,0,0,0,2.48,7.482,25.115,25.115,0,0,0,11.04,11.044,26.261,26.261,0,0,0,7.49,2.481,47.28,47.28,0,0,0,7.88.68c1.2,0.04,2.4.04,3.64,0.04h53.5c1.2,0,2.4-.04,3.64-0.04a57.654,57.654,0,0,0,7.88-.68,26.057,26.057,0,0,0,7.49-2.481,25.115,25.115,0,0,0,11.04-11.044,26.137,26.137,0,0,0,2.48-7.482,47.316,47.316,0,0,0,.68-7.883c0.04-1.2.04-2.4,0.04-3.641V495.533h0Z" transform="translate(-6701 -458)" filter="url(#f1)"></path>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <img class="appIconLarge" src="">
+                        </div>
+                        <div class="appNamePriceContainer">
+                            <h1 class="appName"></h1>
+                            <h2 class="appSubtitle"></h2>
+                        </div>
+                        <div class="appDescriptionContainer">
+                            <p class="appDescription"></p>
+                        </div>
+                        <div class="downloadButtonsContainer">
+                            <a class="appStoreLink" href="#">
+                                <img class="appStore" src="#">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="features"></div>
+                    <footer>
+                        <!-- <p class="footerText">Made by <a href="#"></a></p> -->
+                        <div class="footerIcons">
+                        </div>
+                        <div class="footerLinks">
+                            <a class="changelog" href="/changelog/" target="_self">What's New</a>
+                            <a class="privacypolicy" href="/privacypolicy/" target="_self">Privacy Policy</a>
+                            <a class="presskit" href="/presskit.zip">Press Kit</a>
+                        </div>
+                    </footer>
+                    
+                    <script>
+                        const app = {
+                            name: 'My Cool App ♥️',
+                            subtitle: 'Lorem ipsum dolor sit amet',
+                            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                            icon: null,
+                            footer: {
+                                changelog: {
+                                    enabled: false,
+                                    link: null
+                                },
+                                privacypolicy: {
+                                    enabled: false,
+                                    link: null
+                                },
+                                presskit: {
+                                    enabled: false,
+                                    link: null
+                                },
+                            },
+                            store: {
+                                enabled: false,
+                                link: '',
+                                image: ''
+                            },
+                            features: {
+                                items: [
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 1',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 2',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 3',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 4',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 5',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                    {
+                                        enabled: true,
+                                        icon: 'fa-walking',
+                                        title: 'Feature 6',
+                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                    },
+                                ]
+                            },
+                            social: {
+                                items: [
+                                    { enabled: false, link: 'https://facebook.com/', icon: 'fa-facebook' },
+                                    { enabled: false, link: 'https://twitter.com/', icon: 'fa-twitter' },
+                                    { enabled: false, link: 'https://instagram.com/', icon: 'fa-instagram' },
+                                    { enabled: false, link: 'https://github.com/', icon: 'fa-github' },
+                                    { enabled: false, link: 'mailto:', icon: 'fa-envelope' },
+                                ]
+                            }
+                        };
+
+                        const social = (social) => {
+                            // <a href="https://facebook.com/">
+                            //     <span class="fa-stack fa-1x">
+                            //         <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+                            //         <i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
+                            //     </span>
+                            // </a>
+                            const icon2x =  document.createElement('i');
+                            icon2x.classList.add('socialIconBack', 'fas', 'fa-circle', 'fa-stack-2x');
+
+                            const icon1x =  document.createElement('i');
+                            icon1x.classList.add('socialIconTop', 'fab', social.icon, 'fa-stack-1x');
+
+                            const span = document.createElement('span');
+                            span.classList.add('fa-stack', 'fa-1x');
+                            span.appendChild(icon2x);
+                            span.appendChild(icon1x);
+                            
+                            const anchor = document.createElement('a');
+                            anchor.href = social.link;
+                            anchor.appendChild(span);
+
+                            return anchor;
+                        };
+
+                        const feature = (feature) => {
+                            // <div class="feature">
+                            //     <div>
+                            //         <span class="fa-stack fa-1x">
+                            //             <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                            //             <i class="iconTop fas fa-walking fa-stack-1x"></i>
+                            //         </span>
+                            //     </div>
+                            //     <div class="featureText">
+                            //         <h3>
+                            //             Heart Rate Points
+                            //         </h3>
+                            //         <p>
+                            //             Track your daily heart points to keep your heart healthy.
+                            //         </p>
+                            //     </div>
+                            // </div>
+                            const icon2x =  document.createElement('i');
+                            icon2x.classList.add('iconBack', 'fas', 'fa-circle', 'fa-stack-2x');
+
+                            const icon1x =  document.createElement('i');
+                            icon1x.classList.add('iconTop', 'fas', feature.icon, 'fa-stack-1x');
+
+                            const span = document.createElement('div');
+                            span.classList.add('fa-stack', 'fa-1x');
+                            span.appendChild(icon2x);
+                            span.appendChild(icon1x);
+
+                            const div = document.createElement('div');
+                            div.appendChild(span);
+
+                            const h3 = document.createElement('h3');
+                            h3.innerText = feature.title;
+                            const p = document.createElement('p');
+                            p.innerText = feature.text;
+                            const featureText = document.createElement('div');
+                            featureText.classList.add('featureText');
+                            featureText.appendChild(h3);
+                            featureText.appendChild(p);
+
+                            const element = document.createElement('div');
+                            element.appendChild(div);
+                            element.appendChild(featureText);
+                            element.classList.add('feature');
+
+                            return element;
+                        }
+
+                        document.getElementsByClassName('appName')[0].innerText = app.name;
+                        document.getElementsByClassName('appSubtitle')[0].innerText = app.subtitle;
+                        document.getElementsByClassName('appDescription')[0].innerText = app.description;
+                        document.getElementsByClassName('appIconLarge')[0].src = app.icon;
+                        document.getElementsByClassName('appStoreLink')[0].style.display = app.store.enabled ? 'inline' : 'none';
+                        document.getElementsByClassName('appStore')[0].style.display = app.store.enabled ? 'inline' : 'none';
+                        document.getElementsByClassName('appStoreLink')[0].href = app.store.enabled ? app.store.link : null;
+                        document.getElementsByClassName('appStore')[0].src = app.store.enabled ? app.store.image : null;
+
+                        const features = document.getElementsByClassName('features')[0]
+                        for (const item of app.features.items) {
+                            if (item.enabled) {
+                                features.appendChild(feature(item));
+                            }
+                        }
+
+                        const socials = document.getElementsByClassName('footerIcons')[0]
+                        for (const item of app.social.items) {
+                            if (item.enabled) {
+                                socials.appendChild(social(item));
+                            }
+                        }
+
+                        const changelog = document.getElementsByClassName('changelog')[0];
+                        changelog.style.display = app.footer.changelog.enabled ? 'inline-block' : 'none';
+                        changelog.href = app.footer.changelog.link;
+                        const privacypolicy = document.getElementsByClassName('privacypolicy')[0];
+                        privacypolicy.style.display = app.footer.privacypolicy.enabled ? 'inline-block' : 'none';
+                        privacypolicy.href = app.footer.privacypolicy.link;
+                        const presskit = document.getElementsByClassName('presskit')[0];
+                        presskit.style.display = app.footer.presskit.enabled ? 'inline-block' : 'none';
+                        presskit.href = app.footer.presskit.link;
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
