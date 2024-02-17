@@ -11,9 +11,9 @@
     <body>
         <div class="imageWrapper">
             <div class="headerBackground">
-                <div class="container">
-                    <div class="iphonePreview">
-                        <div class="device device-iphone-x">
+                <div class="container-landscape">
+                    <div class="iphonePreview" style="display: flex;">
+                        <div class="device device-iphone-x" style="margin: auto; transform: rotate(-90deg);">
                             <div class="device-frame">
                                 <!-- <iframe 
                                     src="http://localhost:3000/embed/2e4e73aa25de73d85f74583e362e01987da2848942957645d1eb9cbf622d9195?dc=us-west-1&width=375&height=812"
@@ -22,7 +22,7 @@
                                     title="My Demo App"
                                     style="border:none; border-radius: 40px;">
                                 </iframe> -->
-                                <img src="" alt="" width="375" height="812" style="background-color: #CCC; border-radius: 40px;">
+                                <img src="superhero.gif" alt="" width="375" height="812" style="background-color: #CCC; border-radius: 40px;">
                             </div>
                             <div class="device-stripe"></div>
                             <div class="device-header"></div>
@@ -69,10 +69,10 @@
                     
                     <script>
                         const app = {
-                            name: 'My Cool App ♥️',
-                            subtitle: 'Lorem ipsum dolor sit amet',
-                            description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-                            icon: null,
+                            name: 'Colouring Superheroes',
+                            subtitle: 'Paint Your Favourite Superhero',
+                            description: 'A powerful and unstoppable game for young superheroes all over the world. Give your hero a canvas to explore their inner superpower. Be free to colour outside the lines and inspire them create! The app includes images to colour on, and an empty canvas to express creativity. Best used on tablets!',
+                            icon: 'Icon.png',
                             footer: {
                                 changelog: {
                                     enabled: false,
@@ -88,44 +88,44 @@
                                 },
                             },
                             store: {
-                                enabled: false,
-                                link: '',
-                                image: ''
+                                enabled: true,
+                                link: 'https://apps.apple.com/ca/app/colouring-superheroes/id1511421866',
+                                image: 'appstore.webp'
                             },
                             features: {
                                 items: [
                                     {
                                         enabled: true,
                                         icon: 'fa-walking',
-                                        title: 'Feature 1',
-                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                        title: 'Fun for all ages',
+                                        text: 'Fun colouring child-like superheroes for everyone.'
                                     },
                                     {
                                         enabled: true,
                                         icon: 'fa-walking',
-                                        title: 'Feature 2',
-                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                        title: 'Creativity development',
+                                        text: 'Help your child developer their inner creativity with all the colours of the rainbow.'
                                     },
                                     {
                                         enabled: true,
                                         icon: 'fa-walking',
-                                        title: 'Feature 3',
-                                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
+                                        title: 'Share It!',
+                                        text: 'Save your images and print or share them with your friends and family!'
                                     },
                                     {
-                                        enabled: true,
+                                        enabled: false,
                                         icon: 'fa-walking',
                                         title: 'Feature 4',
                                         text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
                                     },
                                     {
-                                        enabled: true,
+                                        enabled: false,
                                         icon: 'fa-walking',
                                         title: 'Feature 5',
                                         text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'
                                     },
                                     {
-                                        enabled: true,
+                                        enabled: false,
                                         icon: 'fa-walking',
                                         title: 'Feature 6',
                                         text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.'

@@ -77,7 +77,7 @@ a:link,a:hover,a:visited,a:active {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 115px 876px auto auto;
     grid-column-gap: 30px;
-    grid-template-areas: "h h h h h h h h h h h h" "p p p p p i i i i i i i" "c c c c c c c c c c c c" "f f f f f f f f f f f f"
+    grid-template-areas: "h h h h h h h h h h h h" "p p p p p p i i i i i i" "c c c c c c c c c c c c" "f f f f f f f f f f f f"
 }
 
 .container-landscape {
@@ -377,7 +377,6 @@ nav>ul li a:hover,nav>ul li a:active {
     background-color: #000;
     background-size: 400px auto;
     background-repeat: no-repeat;
-    margin-top: 68px
 }
 
 .iphoneScreen {

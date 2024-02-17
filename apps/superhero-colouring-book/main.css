@@ -87,7 +87,7 @@ a:link,a:hover,a:visited,a:active {
     padding-left: 15px;
     padding-right: 15px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto 380px auto auto auto;
     grid-column-gap: 30px;
     grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "p p p p p p p p p p p p" "c c c c c c c c c c c c" "f f f f f f f f f f f f"
 }
@@ -377,7 +377,6 @@ nav>ul li a:hover,nav>ul li a:active {
     background-color: #000;
     background-size: 400px auto;
     background-repeat: no-repeat;
-    margin-top: 68px
 }
 
 .iphoneScreen {
