@@ -25,4 +25,43 @@
     hljs.initLineNumbersOnLoad();
 </script>
 <title>{% if page.title %}{{ page.title }}{% else %}Vijay Sharma Consulting{% endif %} | vijaysharma.ca</title>
+<style>
+    .project-continer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: white;
+        padding: 16px;
+        border-radius: 8px;
+    }
 
+    .project-continer-left {
+        grid-template-areas:
+            "image title title title"
+            "image subtitle subtitle subtitle"
+            "image link link link" 
+    }
+
+    .project-continer-right {
+        grid-template-areas:
+            "title title title image"
+            "subtitle subtitle subtitle image"
+            "link link link image"
+    }
+
+    .project-continer-image {
+        grid-area: image;
+        display: flex;
+    }
+
+    .project-continer-title {
+        grid-area: title;
+    }
+
+    .project-continer-subtitle {
+        grid-area: subtitle;
+    }
+
+    .project-continer-link {
+        grid-area: link
+    }
+</style>
