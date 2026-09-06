@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactile — Haptic Pattern Studio</title>
+    <meta name="description" content="Design and feel custom iPhone haptic patterns on a visual timeline, then export AHAP or Swift.">
+    <style>
+        :root { color-scheme: light dark; --bg:#fafafc; --fg:#1c1c22; --muted:#6b6b77; --card:#fff; --border:rgba(0,0,0,0.08); --accent:#4838f2; }
+        @media (prefers-color-scheme: dark){ :root{ --bg:#0f0f13; --fg:#ececf2; --muted:#9a9aa7; --card:#17171d; --border:rgba(255,255,255,0.1); --accent:#a78bfa; } }
+        * { box-sizing: border-box; }
+        body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); }
+        .hero { text-align:center; padding:72px 22px 40px; background:linear-gradient(160deg,#4838f2 0%,#ab3cee 100%); color:#fff; }
+        .hero img { width:120px; height:120px; border-radius:27px; box-shadow:0 12px 40px rgba(0,0,0,0.3); }
+        .hero h1 { font-size:2.4rem; margin:20px 0 6px; }
+        .hero p { font-size:1.15rem; opacity:0.95; margin:0 auto; max-width:520px; }
+        .wrap { max-width:760px; margin:0 auto; padding:40px 22px; }
+        .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin:8px 0 40px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+        .card h3 { margin:0 0 6px; font-size:1.05rem; }
+        .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+        h2 { font-size:1.4rem; margin-top:40px; }
+        a { color:var(--accent); }
+        .support { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; }
+        footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:32px 22px 48px; }
+        footer a { margin:0 10px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="Tactile app icon">
+        <h1>Tactile</h1>
+        <p>Design and feel custom iPhone haptic patterns on a visual timeline — then export AHAP or Swift.</p>
+    </div>
+
+    <div class="wrap">
+        <div class="features">
+            <div class="card"><h3>Feel it instantly</h3><p>Tap an event to feel it. Drag a slider and feel intensity and sharpness change under your finger, live on the device.</p></div>
+            <div class="card"><h3>Multi-lane timeline</h3><p>Compose transient taps and continuous rumbles, with intensity and sharpness automation curves.</p></div>
+            <div class="card"><h3>Export that fits</h3><p>Ship a ready-to-bundle .ahap, or copy generated Swift that builds the CHHapticPattern in code.</p></div>
+            <div class="card"><h3>Lossless AHAP import</h3><p>Bring in existing AHAP files — Tactile preserves anything it doesn't yet edit so your files round-trip intact.</p></div>
+            <div class="card"><h3>Built for accessibility</h3><p>Design distinguishable haptic cues and test them with a blind A/B/X comparison.</p></div>
+            <div class="card"><h3>Honest about hardware</h3><p>Requires an iPhone with a Taptic Engine, and never fakes the feel.</p></div>
+        </div>
+
+        <h2>Support</h2>
+        <div class="support">
+            <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@vijaysharma.ca">hello@vijaysharma.ca</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2026 Vijay Sharma</div>
+        <div style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a>
+        </div>
+    </footer>
+</body>
+</html>
