@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autolens — Privacy Policy</title>
+    <style>
+        :root { color-scheme: light dark; }
+        body {
+            font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 720px; margin: 0 auto; padding: 40px 22px; color: #1c1c22; background: #fafafc;
+        }
+        @media (prefers-color-scheme: dark) { body { color: #ececf2; background: #131317; } a { color: #6fd3e6; } }
+        h1 { font-size: 1.9rem; margin-bottom: 0.2em; }
+        h2 { font-size: 1.2rem; margin-top: 1.8em; }
+        .accent { height: 5px; width: 64px; border-radius: 3px;
+            background: linear-gradient(90deg, #0a6b8a, #4cc9a0); margin: 0 0 24px; }
+        .meta { color: #6b6b77; font-size: 0.9rem; }
+        a { color: #0a6b8a; }
+        code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="accent"></div>
+    <h1>Privacy Policy for Autolens</h1>
+    <p class="meta">Last updated: October 6, 2026</p>
+
+    <p>
+        Autolens is a prototype app for searching Canadian dealer car listings, checking
+        whether an asking price is fair, and decoding vehicle identification numbers (VINs).
+        It is distributed only to invited testers through TestFlight. In short: Autolens has
+        no accounts, keeps your saved cars and notes on your iPhone, sends your searches to
+        the data providers that answer them, and — only if you choose to share it — records
+        how you use the app so the developers can improve it. It never sells your data or
+        uses it for advertising.
+    </p>
+
+    <h2>Information we collect</h2>
+    <p>
+        <strong>Activity sharing (optional).</strong> When you first open Autolens you can
+        choose to share your activity by entering a name and an invite code. If you do, the
+        app records which screens you open, which buttons you tap, how many data lookups an
+        action used and what they cost, and any errors. A car appears in this record only as
+        its <strong>make and body style</strong> (for example "Toyota SUV"). The record is
+        tied to the name you chose and an anonymous account the app creates for you, and is
+        visible only to the app's developers. It <strong>never</strong> includes prices,
+        VINs, listings, photos, your notes, your location, or any API key. If you choose
+        "Continue without sharing", none of this is collected.
+    </p>
+    <p>
+        <strong>Crash reports.</strong> If the app crashes, a crash report (device model,
+        iOS version and the technical state of the app) is sent so the problem can be fixed.
+        It is not linked to your identity.
+    </p>
+    <p>
+        Autolens does <strong>not</strong> collect your email address or contacts, uses
+        <strong>no advertising and does not access the IDFA</strong>, and does
+        <strong>not track you across other apps or websites</strong>.
+    </p>
+
+    <h2>Searches, VINs, camera and location</h2>
+    <ul>
+        <li><strong>Searches</strong> you run (make, model, price range and so on) are sent to
+            <strong>MarketCheck</strong>, which supplies the listings, prices and market data.</li>
+        <li><strong>VINs</strong> you scan or type are sent to the U.S. National Highway Traffic
+            Safety Administration's free decoder (NHTSA vPIC) to identify the vehicle, and to
+            MarketCheck if you ask for a market check, price history or factory options.</li>
+        <li><strong>Camera</strong> access is used only to read a VIN while you point the camera
+            at it. No images are saved or sent anywhere.</li>
+        <li><strong>Location</strong> is used only when you tap "Use my location" to search
+            near you. Your approximate coordinates are then sent to MarketCheck as part of that
+            search, and are not stored by Autolens.</li>
+        <li><strong>Plain-English search</strong> runs on your iPhone using Apple Intelligence.
+            What you type there is not sent anywhere until you search with the resulting filters.</li>
+        <li>The <strong>vehicle history</strong> buttons open the Insurance Bureau of Canada's
+            VIN Verify page or CARFAX Canada's site in a browser, with the VIN copied for you to
+            paste. Autolens does not read or keep what those sites show.</li>
+    </ul>
+
+    <h2>Your data on your device</h2>
+    <p>
+        Saved cars, saved searches, notes, recently viewed cars, your comparison list and your
+        settings are stored <strong>only on your iPhone</strong>. They are not synced or
+        uploaded, and deleting the app deletes them. The MarketCheck API key you enter is kept
+        in your iPhone's Keychain and is only ever sent to MarketCheck.
+    </p>
+
+    <h2>Third-party services</h2>
+    <ul>
+        <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Crashlytics and
+            App Check) processes the optional activity record and crash reports described above,
+            under the <a href="https://firebase.google.com/support/privacy">Firebase privacy and
+            security information</a> and the
+            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        <li><strong>MarketCheck</strong> receives the searches, VINs and (if you use it) the
+            location described above, under
+            <a href="https://www.marketcheck.com/privacy_policy/">MarketCheck's privacy policy</a>.</li>
+        <li><strong>NHTSA vPIC</strong>, a U.S. government service, receives VINs you decode.
+            It requires no account and receives nothing else.</li>
+    </ul>
+    <p>Autolens shares no data with anyone else and shows no ads.</p>
+
+    <h2>How long data is kept</h2>
+    <p>
+        The optional activity record is kept only for the duration of the prototype and is
+        then deleted. You can ask for your record to be deleted sooner at any time.
+    </p>
+
+    <h2>Children</h2>
+    <p>Autolens is intended for adults shopping for cars and is not directed at children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new
+       "last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy, or want your activity record deleted? Email
+       <a href="mailto:hello@vijaysharma.ca">hello@vijaysharma.ca</a>.</p>
+</body>
+</html>
