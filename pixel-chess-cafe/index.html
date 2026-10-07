@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Chess Café</title>
+<meta name="description" content="Pixel Chess Café: cozy checkmate puzzles, told as stories by the café's owner. For iPhone and iPad.">
+<style>
+  :root { color-scheme: light dark; --bg: #F6EEDC; --card: #FBF5E9; --ink: #2A1A10; --muted: #6B5240; --accent: #3B2418; --line: rgba(42,26,16,.12); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1C130D; --card: #261A12; --ink: #F3E6CF; --muted: #C9B394; --accent: #F2A13A; --line: rgba(243,230,207,.14); } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 32px; }
+  h1 { font: 700 28px/1.2 ui-monospace, Menlo, monospace; letter-spacing: .02em; color: var(--accent); margin: 16px 0 4px; }
+  h2 { font: 700 17px/1.3 ui-monospace, Menlo, monospace; margin-top: 2em; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .hero { text-align: center; padding-top: 8px; }
+  .hero img { width: 112px; height: 112px; border-radius: 25px; image-rendering: pixelated; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .card h3 { font: 700 15px/1.3 ui-monospace, Menlo, monospace; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  footer { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon.png" alt="Pixel Chess Café app icon">
+    <h1>Pixel Chess Café</h1>
+    <p class="muted">Cozy checkmate stories, for iPhone and iPad.</p>
+  </div>
+
+  <p>Come in, come in. There's a table by the window and a puzzle waiting. Pixel Chess Café is a cozy chess-puzzle game about finding the checkmate. Agathe runs the café and tells the stories her great-aunt kept in a biscuit tin, each one a run of hand-picked mates from a single move to three.</p>
+
+  <div class="cards">
+    <div class="card"><h3>Story books</h3><p>A free first book that teaches as it goes. The Full Edition adds the rest, now and to come.</p></div>
+    <div class="card"><h3>The Back Table</h3><p>Thousands of mates by depth or by pattern: smothered, Anastasia, back rank and more.</p></div>
+    <div class="card"><h3>A daily puzzle</h3><p>The same for everyone, on your home screen too.</p></div>
+    <div class="card"><h3>No penalties</h3><p>Stray moves show you why and rewind. Free, unlimited hints. Nothing to lose.</p></div>
+    <div class="card"><h3>For everyone</h3><p>Full VoiceOver support, Reduce Motion, and the silent switch respected.</p></div>
+    <div class="card"><h3>Nothing collected</h3><p>No ads, no accounts, no tracking. Data Not Collected.</p></div>
+  </div>
+
+  <h2>Support</h2>
+  <p>Write to <a href="mailto:hello@vijaysharma.ca?subject=Pixel%20Chess%20Caf%C3%A9">hello@vijaysharma.ca</a>. A real person reads every note.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>I bought the Full Edition on another device.</strong> Open Settings in the café and tap <em>Restore purchase</em>. Family Sharing is on, so anyone in your family group gets the books too.</p>
+  <p><strong>What do I get with the Full Edition?</strong> Book 2 now, plus any future books at no extra cost. One purchase, once. No ads, ever.</p>
+  <p><strong>A move I'm sure is right was rejected.</strong> In Relaxed mode the café only accepts moves that keep the mate forced; it shows you the escape and rewinds. If you think a puzzle is wrong, send us the book, chapter and puzzle number.</p>
+  <p><strong>Can I turn off sounds or the vibration?</strong> Yes: Settings, under "At the table". The café also respects your silent switch.</p>
+  <p><strong>The reminder stopped.</strong> If several reminders go by without a visit, the café quietly stops sending them. Turn it back on any time in Settings.</p>
+
+  <h2>Credits</h2>
+  <p class="muted">Puzzles from the Lichess puzzle database (CC0). Sound effects from CC0 libraries and the café's own foley. Pixel type: Silkscreen (SIL Open Font License). All characters and stories are fiction.</p>
+</main>
+<footer>
+  <div>© 2026 Vijay Sharma</div>
+  <div style="margin-top:8px"><a href="./">Pixel Chess Café</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of Use</a></div>
+</footer>
+</body>
+</html>
