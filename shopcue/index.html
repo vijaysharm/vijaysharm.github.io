@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCue — Shopping Reminders</title>
+    <meta name="description" content="A shopping list that reminds you when you're near — or walk into — any branch of the stores you pick. Private by design.">
+    <style>
+        :root { color-scheme: light dark; --bg:#fafafc; --fg:#1c1c22; --muted:#6b6b77; --card:#fff; --border:rgba(0,0,0,0.08); --accent:#d4501c; }
+        @media (prefers-color-scheme: dark){ :root{ --bg:#131317; --fg:#ececf2; --muted:#9a9aa7; --card:#1b1b21; --border:rgba(255,255,255,0.1); --accent:#ff8646; } }
+        * { box-sizing: border-box; }
+        body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); }
+        .hero { text-align:center; padding:72px 22px 40px; background:linear-gradient(160deg,#ff9a4d 0%,#e8612a 100%); color:#fff; }
+        .hero img { width:120px; height:120px; border-radius:27px; box-shadow:0 12px 40px rgba(0,0,0,0.25); }
+        .hero h1 { font-size:2.4rem; margin:20px 0 6px; }
+        .hero p { font-size:1.15rem; opacity:0.95; margin:0 auto; max-width:520px; }
+        .wrap { max-width:760px; margin:0 auto; padding:40px 22px; }
+        .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin:8px 0 40px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+        .card h3 { margin:0 0 6px; font-size:1.05rem; }
+        .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+        h2 { font-size:1.4rem; margin-top:40px; }
+        h3.q { font-size:1.02rem; margin:22px 0 4px; }
+        a { color:var(--accent); }
+        .support { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; }
+        .support ol { padding-left:20px; margin:8px 0 0; }
+        .muted { color:var(--muted); }
+        footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:32px 22px 48px; }
+        footer a { margin:0 10px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="ShopCue app icon">
+        <h1>ShopCue</h1>
+        <p>Reminders at every branch. A shopping list that taps you on the shoulder when you're near — or walk into — the stores you pick.</p>
+    </div>
+
+    <div class="wrap">
+        <div class="features">
+            <div class="card"><h3>Every branch counts</h3><p>Pick a store once and ShopCue recognises any branch of that chain, not just one address.</p></div>
+            <div class="card"><h3>Nearby, then Arrived</h3><p>A gentle heads-up as you pass, and a reminder with your list when you actually walk in.</p></div>
+            <div class="card"><h3>Easy on battery</h3><p>Uses iOS region monitoring, not continuous GPS tracking. iOS wakes ShopCue only at store boundaries.</p></div>
+            <div class="card"><h3>Private by design</h3><p>No account, no server, no analytics. Your lists and locations never leave your iPhone.</p></div>
+            <div class="card"><h3>Capture from anywhere</h3><p>Save links, photos or a quick note — including from the share sheet in Safari and other apps.</p></div>
+            <div class="card"><h3>Free, then pay once</h3><p>Reminders at 3 stores free. ShopCue Unlimited removes the cap — one purchase, shared with your family.</p></div>
+        </div>
+
+        <h2>Support</h2>
+        <div class="support">
+            <p>Need help, found a bug, or have an idea? I'd love to hear from you.</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@vijaysharma.ca?subject=ShopCue%20feedback">hello@vijaysharma.ca</a></p>
+            <p class="muted">To help me fix reminder problems quickly:</p>
+            <ol class="muted">
+                <li>In ShopCue, open Settings → Send Feedback and tap <em>Copy</em> next to app details, then paste them into your email.</li>
+                <li>If a reminder came late or didn't come, you can also attach the diagnostics file from the same screen. It contains the stores ShopCue watched and when reminders fired — only send it if you're comfortable with that.</li>
+            </ol>
+        </div>
+
+        <h2>Common questions</h2>
+        <h3 class="q">Why does ShopCue need "Always" location?</h3>
+        <p class="muted">So iOS can wake it when you reach a store, even when the app isn't open. ShopCue doesn't track you continuously, and location never leaves your phone.</p>
+        <h3 class="q">I didn't get a reminder.</h3>
+        <p class="muted">Check that notifications and "Always" location are on (Settings → Permissions &amp; Privacy in ShopCue shows both), and that the store has items and reminders turned on. On the free plan, only your 3 oldest stores remind you; the rest show an "Unlimited" lock.</p>
+        <h3 class="q">How do I restore ShopCue Unlimited on a new phone?</h3>
+        <p class="muted">Settings → Restore Purchase, signed in with the same Apple Account. Family Sharing members get it automatically.</p>
+    </div>
+
+    <footer>
+        <div>© 2026 Vijay Sharma</div>
+        <div style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple EULA)</a>
+        </div>
+    </footer>
+</body>
+</html>
