@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumbtrail — Recipe Saver</title>
+    <meta name="description" content="Save recipes from any website, YouTube, TikTok, a screenshot or Apple Notes — and always keep where they came from. Private by design, no subscription.">
+    <style>
+        :root { color-scheme: light dark; --bg:#fbf5ee; --fg:#1c1917; --muted:#6b5e55; --card:#fffdf9; --border:rgba(28,25,23,0.08); --accent:#9a3412; }
+        @media (prefers-color-scheme: dark){ :root{ --bg:#171412; --fg:#f2ebe4; --muted:#a89a90; --card:#211d1a; --border:rgba(255,255,255,0.1); --accent:#f59e0b; } }
+        * { box-sizing: border-box; }
+        body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); }
+        .hero { text-align:center; padding:72px 22px 40px; background:#9a3412; color:#fbf5ee; }
+        .hero img { width:120px; height:120px; border-radius:27px; box-shadow:0 12px 40px rgba(0,0,0,0.25); }
+        .hero h1 { font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif; font-size:2.6rem; margin:20px 0 6px; }
+        .hero p { font-size:1.15rem; opacity:0.95; margin:0 auto; max-width:540px; }
+        .wrap { max-width:760px; margin:0 auto; padding:40px 22px; }
+        .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin:8px 0 40px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; }
+        .card h3 { margin:0 0 6px; font-size:1.05rem; }
+        .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+        h2 { font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif; font-size:1.5rem; margin-top:40px; }
+        h3.q { font-size:1.02rem; margin:22px 0 4px; }
+        a { color:var(--accent); }
+        .support { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:24px; }
+        .support ol { padding-left:20px; margin:8px 0 0; }
+        .muted { color:var(--muted); }
+        footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:32px 22px 48px; }
+        footer a { margin:0 10px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="Crumbtrail app icon">
+        <h1>Crumbtrail</h1>
+        <p>Save any recipe — and the trail back to where it came from. From websites, YouTube, TikTok, a screenshot or Apple Notes.</p>
+    </div>
+
+    <div class="wrap">
+        <div class="features">
+            <div class="card"><h3>Save from anywhere</h3><p>Share a link, a video, a screenshot or a note. Crumbtrail reads the recipe on your iPhone — no cloud AI, no import limits.</p></div>
+            <div class="card"><h3>Never lose the source</h3><p>Every recipe keeps the page, video or note it came from, so the original creator always gets the credit.</p></div>
+            <div class="card"><h3>Find by what you have</h3><p>Search by ingredient — "white beans" and "olive oil" — and see what you can make tonight.</p></div>
+            <div class="card"><h3>Cook mode</h3><p>Big type, the screen stays awake, timers from the steps, and amounts in grams if you weigh.</p></div>
+            <div class="card"><h3>Plan, shop once</h3><p>Keep a few meals in mind, give them a day if you like, and send one merged grocery list to Reminders.</p></div>
+            <div class="card"><h3>Private, no subscription</h3><p>No account, no ads, no analytics. Your recipes live on your iPhone and in your own iCloud. Pay once for Pro.</p></div>
+        </div>
+
+        <h2>Support</h2>
+        <div class="support">
+            <p>Need help, found a recipe that didn't import, or have an idea? I'd love to hear from you.</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@vijaysharma.ca?subject=Crumbtrail%20feedback">hello@vijaysharma.ca</a></p>
+            <p class="muted">To help me fix problems quickly:</p>
+            <ol class="muted">
+                <li>In Crumbtrail, open Settings → Send feedback and tap <em>Copy</em> next to app details, then paste them into your email.</li>
+                <li>If a link or screenshot didn't import, include the link — and, if you're comfortable, attach the diagnostics file from the same screen. It lists recent import attempts and the links they used, sync events and crash reports from iOS.</li>
+            </ol>
+        </div>
+
+        <h2>Common questions</h2>
+        <h3 class="q">A recipe didn't come through. What now?</h3>
+        <p class="muted">Some sites block apps, and Instagram and Facebook don't share captions. Crumbtrail still saves the link and puts it in your Inbox — use <em>Fill in from…</em> to add the creator's recipe page, screenshots, or pasted text.</p>
+        <h3 class="q">How do I get my recipes on another device?</h3>
+        <p class="muted">Sign in to the same iCloud account on both devices and keep iCloud Drive turned on. Crumbtrail syncs through your private iCloud — there's nothing else to sign in to.</p>
+        <h3 class="q">Can I share my meal plan with my family?</h3>
+        <p class="muted">Yes. In Plan, tap the share button and send the invite. Everyone you invite can add meals, mark them made and send the grocery list.</p>
+        <h3 class="q">Can I take my recipes with me?</h3>
+        <p class="muted">Always. Settings → Export all recipes makes a zip of plain JSON files and photos. Crumbtrail also imports Paprika and Mela exports.</p>
+    </div>
+
+    <footer>
+        <div>© 2026 Vijay Sharma</div>
+        <div style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple EULA)</a>
+        </div>
+    </footer>
+</body>
+</html>
