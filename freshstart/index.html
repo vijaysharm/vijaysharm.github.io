@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Start — Resume Builder</title>
+    <meta name="description" content="Write your career history once, then make a tailored resume and cover letter for every job — on Mac, iPad and iPhone. Private, on-device AI.">
+    <style>
+        :root { color-scheme: light dark; --bg:#fbfaf8; --fg:#1d1c1a; --muted:#6d6a64; --card:#fff; --border:rgba(0,0,0,0.08); --accent:#c95d12; }
+        @media (prefers-color-scheme: dark){ :root{ --bg:#141312; --fg:#eeece8; --muted:#a29e96; --card:#1d1c1a; --border:rgba(255,255,255,0.1); --accent:#ffa257; } }
+        * { box-sizing: border-box; }
+        body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); }
+        .hero { text-align:center; padding:72px 22px 40px; background:linear-gradient(160deg,#ffb347 0%,#f07a1e 100%); color:#fff; }
+        .hero img { width:120px; height:120px; border-radius:27px; box-shadow:0 12px 40px rgba(0,0,0,0.25); }
+        .hero h1 { font-size:2.4rem; margin:20px 0 6px; }
+        .hero p { font-size:1.15rem; opacity:0.95; margin:0 auto; max-width:540px; }
+        .wrap { max-width:760px; margin:0 auto; padding:40px 22px; }
+        .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin:8px 0 40px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+        .card h3 { margin:0 0 6px; font-size:1.05rem; }
+        .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+        h2 { font-size:1.4rem; margin-top:40px; }
+        h3.q { font-size:1.02rem; margin:22px 0 4px; }
+        a { color:var(--accent); }
+        .support { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; }
+        .muted { color:var(--muted); }
+        footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:32px 22px 48px; }
+        footer a { margin:0 10px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="Fresh Start app icon">
+        <h1>Fresh Start</h1>
+        <p>Write your career history once. Make a tailored resume — and cover letter — for every job you apply to.</p>
+    </div>
+
+    <div class="wrap">
+        <div class="features">
+            <div class="card"><h3>One career library</h3><p>Every role and every bullet you've ever written, in one place. Each resume picks what fits.</p></div>
+            <div class="card"><h3>Tailored to the job</h3><p>Paste a posting: see which keywords you cover, keep your most relevant work, and reword bullets in the posting's language — checked so nothing gets invented.</p></div>
+            <div class="card"><h3>Cover letters</h3><p>Drafted from your own accomplishments and the posting, then yours to edit.</p></div>
+            <div class="card"><h3>Exports that job sites can read</h3><p>PDF that matches the screen, plus Word and plain text for portals that ask for them. Exporting is never locked.</p></div>
+            <div class="card"><h3>Track what you sent</h3><p>Keep the exact resume and letter you sent each employer, get reminded to follow up, and move applications along a pipeline.</p></div>
+            <div class="card"><h3>Private by design</h3><p>No account, no server, no analytics. AI runs on your device; sync uses your own iCloud.</p></div>
+        </div>
+
+        <h2>Support</h2>
+        <div class="support">
+            <p>Need help, found a bug, or have an idea? I'd love to hear from you.</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@vijaysharma.ca?subject=Fresh%20Start%20feedback">hello@vijaysharma.ca</a></p>
+            <p class="muted">Please include your device and the app version (in the App Store, or Fresh Start ▸ About on a Mac).</p>
+        </div>
+
+        <h2>Common questions</h2>
+        <h3 class="q">Can I bring in my existing resume?</h3>
+        <p class="muted">Yes: File ▸ Import (or Import… on the welcome screen) reads a PDF or Word resume. For LinkedIn, open your profile, choose More ▸ Save to PDF, and import that file. Everything is read on your device. Check roles and dates afterwards — importing from a document is a best guess.</p>
+        <h3 class="q">What's free, and what's Pro?</h3>
+        <p class="muted">Building your library, editing, importing, exporting (PDF, Word, text), keyword coverage, fit-to-one-page and recording applications are free, with two resumes and eight templates. Pro adds unlimited resumes, every template, AI tailoring, cover-letter drafting, follow-up reminders and the interview pipeline, and AI agent access on the Mac — as a one-time purchase or a yearly plan.</p>
+        <h3 class="q">Why is AI tailoring unavailable?</h3>
+        <p class="muted">Fresh Start uses Apple Intelligence on your device. It needs a device that supports Apple Intelligence, with it turned on in Settings. Everything else in the app works without it.</p>
+        <h3 class="q">How do I get Pro on my other devices?</h3>
+        <p class="muted">Sign in with the same Apple Account and tap Restore Purchase on the Pro screen. Your library syncs through your iCloud.</p>
+        <h3 class="q">How do I cancel the yearly plan?</h3>
+        <p class="muted">In your Apple Account's Subscriptions settings (Settings ▸ your name ▸ Subscriptions on iPhone and iPad; App Store ▸ your account on a Mac).</p>
+    </div>
+
+    <footer>
+        <div>© 2026 Vijay Sharma</div>
+        <div style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a>
+        </div>
+    </footer>
+</body>
+</html>
