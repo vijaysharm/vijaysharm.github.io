@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Complete — JavaScript Coding Practice</title>
+    <meta name="description" content="Free, offline JavaScript practice for iPhone, iPad and Mac: 51 exercises with real tests that run on your device.">
+    <style>
+        :root { color-scheme: light dark; --bg:#f5f8fb; --fg:#0b1a2b; --muted:#5b6b7c; --card:#fff; --border:rgba(0,21,41,0.1); --accent:#0046c8; }
+        @media (prefers-color-scheme: dark){ :root{ --bg:#001529; --fg:#ffffff; --muted:#b4c2cf; --card:#02203c; --border:rgba(255,255,255,0.1); --accent:#4a90e2; } }
+        * { box-sizing: border-box; }
+        body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg); background:var(--bg); }
+        .hero { text-align:center; padding:72px 22px 40px; background:linear-gradient(160deg,#001529 0%,#14324b 100%); color:#fff; }
+        .hero img { width:120px; height:120px; border-radius:27px; box-shadow:0 12px 40px rgba(0,0,0,0.4); }
+        .hero h1 { font-size:2.4rem; margin:20px 0 6px; }
+        .hero p { font-size:1.15rem; opacity:0.95; margin:0 auto; max-width:540px; }
+        .hero code { font-family:Menlo,monospace; color:#f8e71c; }
+        .wrap { max-width:760px; margin:0 auto; padding:40px 22px; }
+        .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin:8px 0 40px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+        .card h3 { margin:0 0 6px; font-size:1.05rem; }
+        .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+        h2 { font-size:1.4rem; margin-top:40px; }
+        a { color:var(--accent); }
+        .support { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px; }
+        .credit { color:var(--muted); font-size:0.9rem; }
+        footer { text-align:center; color:var(--muted); font-size:0.85rem; padding:32px 22px 48px; }
+        footer a { margin:0 10px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="icon.png" alt="Code Complete app icon">
+        <h1>Code Complete</h1>
+        <p>Practise JavaScript with 51 exercises and real tests that run on your iPhone, iPad or Mac. Free, offline, and private.</p>
+    </div>
+
+    <div class="wrap">
+        <div class="features">
+            <div class="card"><h3>Real tests, on device</h3><p>Run your code against each exercise's tests and see what passed, what was expected and what you returned.</p></div>
+            <div class="card"><h3>51 exercises</h3><p>Arrays, strings, math, dynamic programming, data structures and grid puzzles, from warm-ups to evening-long challenges.</p></div>
+            <div class="card"><h3>A real editor</h3><p>Syntax highlighting, line numbers, auto-indent, adjustable text size, and quotes that stay straight.</p></div>
+            <div class="card"><h3>Hints when you need them</h3><p>Up to three progressive hints per exercise, plus a reference solution to compare approaches.</p></div>
+            <div class="card"><h3>Safe sandbox</h3><p>Your code runs in an isolated JavaScript worker. Infinite loops are stopped, and nothing leaves your device.</p></div>
+            <div class="card"><h3>Free and private</h3><p>No account, no ads, no in-app purchases, and no data collected.</p></div>
+        </div>
+
+        <p class="credit">Exercises are adapted from the <a href="https://github.com/exercism/javascript">Exercism JavaScript track</a> under the MIT License. Hints are written for Code Complete.</p>
+
+        <h2>Support</h2>
+        <div class="support">
+            <p>Need help, found a bug in an exercise, or have a suggestion? I'd love to hear from you.</p>
+            <p><strong>Email:</strong> <a href="mailto:hello@vijaysharma.ca">hello@vijaysharma.ca</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2026 Vijay Sharma</div>
+        <div style="margin-top:8px">
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a>
+        </div>
+    </footer>
+</body>
+</html>
